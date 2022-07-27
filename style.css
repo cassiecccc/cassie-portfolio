@@ -1,0 +1,230 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f6f2ea;
+  height: 100vh;
+  position: absolute;
+  inset: 0;
+  cursor: default;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0 2rem 0;
+  margin: 0 10rem;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0 1rem;
+  font-size: 0.85rem;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.connect a {
+  text-decoration: none;
+  color: #e86f6f;
+  font-weight: 700;
+}
+
+.avatar {
+  background-color: #e86f6f;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 1rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+  margin: 0 10rem;
+}
+
+header h5 {
+  color: #e86f6f;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+header p {
+  margin: 0 6rem;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 0.85rem;
+  color: #777774;
+}
+
+.portfolio-projects {
+  padding: 4rem 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  row-gap: 40;
+  justify-items: center;
+  margin: 0 10rem 7rem 10rem;
+}
+
+.project {
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.project img {
+  width: 250px;
+  margin-bottom: 1rem;
+}
+
+.project .project-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #777774;
+  text-align: center;
+}
+
+.project a {
+  text-decoration: none;
+}
+
+.project:hover {
+  background-color: #f9e6dd;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10rem 5rem 10rem;
+  height: 100vh;
+}
+
+.about-me h3 {
+  font-size: 30px;
+  color: #e86f6f;
+  margin-bottom: 2rem;
+}
+
+.about-me p {
+  margin: 1rem 10rem;
+  color: #777774;
+  line-height: 2rem;
+  position: relative;
+  font-size: 1.25rem;
+}
+
+.about-me svg {
+  opacity: 0.5;
+}
+
+.about-me #right-quote {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  right: 180;
+}
+
+#resume {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+footer {
+  padding: 2rem 10rem;
+  background-color: #a9b7ad;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer p {
+  margin-right: 1rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+footer .connect-social svg {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

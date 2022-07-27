@@ -1,0 +1,180 @@
+//colors
+$black: rgb(0, 0, 0);
+$nav-color: rgb(246, 242, 234);
+$background: rgb(254, 252, 245);
+$red: rgb(232, 111, 111);
+$pink: rgb(249, 230, 221);
+$green: rgb(169, 183, 173);
+$white: rgb(255, 255, 255);
+$font-color: rgb(119, 119, 116);
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: $nav-color;
+  height: 100vh;
+  position: absolute;
+  inset: 0;
+  cursor: default;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 2rem 0;
+  margin: 0 10rem;
+
+  ul {
+    display: flex;
+    li {
+      list-style: none;
+      padding: 0 1rem;
+      font-size: 0.85rem;
+      a {
+        color: $black;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.connect {
+  a {
+    text-decoration: none;
+    color: $red;
+    font-weight: 700;
+  }
+}
+
+.avatar {
+  background-color: $red;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: $white;
+  font-size: 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  margin: 0 10rem;
+
+  h5 {
+    color: $red;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 40px;
+    margin-bottom: 2rem;
+  }
+  p {
+    margin: 0 6rem;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.85rem;
+    color: $font-color;
+  }
+}
+
+.portfolio-projects {
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 0;
+  row-gap: 40;
+  justify-items: center;
+  margin: 0 10rem 7rem 10rem;
+}
+
+.project {
+  cursor: pointer;
+  padding: 2rem;
+
+  img {
+    width: 250px;
+    margin-bottom: 1rem;
+  }
+  .project-name {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: $font-color;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.project:hover {
+  background-color: $pink;
+  transition: 0.2s;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10rem 5rem 10rem;
+  height: 100vh;
+
+  p {
+    margin: 1rem 10rem;
+    color: $font-color;
+    line-height: 2rem;
+    position: relative;
+    font-size: 1.25rem;
+  }
+  svg {
+    opacity: 0.5;
+  }
+
+  #right-quote {
+    transform: rotate(180deg);
+    position: absolute;
+    right: 180;
+  }
+}
+
+#resume {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+footer {
+  padding: 2rem 10rem;
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  p {
+    margin-right: 1rem;
+    color: $white;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  .connect-social {
+    svg {
+      margin-right: 0.5rem;
+      cursor: pointer;
+    }
+  }
+}
